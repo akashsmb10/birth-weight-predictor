@@ -46,7 +46,7 @@ def get_prediction():
     # FIX IS HERE 👇
     baby_df = pd.DataFrame([baby_data_form])
 
-    with open("model/model.pkl", "rb") as obj:
+    with open("model.pkl", "rb") as obj:
         model = pickle.load(obj)
 
     prediction = model.predict(baby_df)
