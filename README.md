@@ -48,3 +48,13 @@ This project aims to provide a **data-driven estimation** of birth weight using 
 ---
 
 ## 📁 Project Structure
+
+---
+
+## 🧪 How to Run Locally
+```bash
+git clone https://github.com/akashsmb10/birth-weight-predictor.git
+cd birth-weight-predictor
+pip install -r requirements.txt
+python app.py
+
