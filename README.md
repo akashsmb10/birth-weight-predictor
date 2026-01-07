@@ -1,6 +1,6 @@
-# 👶 Birth Weight Prediction Web App
+# ML-Driven Clinical Prediction System with RESTful APIs
 
-A Machine Learning powered web application that predicts **newborn birth weight** based on maternal and pregnancy-related factors.  
+A Machine Learning–powered web application that predicts **newborn birth weight** based on maternal and pregnancy-related factors.  
 The application is built using **Python, Flask, and Scikit-learn** and deployed live using **Render**.
 
 ---
@@ -16,7 +16,7 @@ This project aims to provide a **data-driven estimation** of birth weight using 
 - Gestation period
 - Parity
 - Mother’s age
-- Height & weight
+- Height and weight
 - Smoking status
 
 ---
@@ -32,35 +32,38 @@ This project aims to provide a **data-driven estimation** of birth weight using 
 ---
 
 ## 📊 Machine Learning Model
-- Model trained on structured medical data
-- Regression-based approach
-- Model serialized using `pickle`
-- Input validation handled via Flask routes
+- Supervised regression model trained on structured medical data  
+- Feature preprocessing and validation handled before prediction  
+- Model serialized using `pickle` for deployment  
+- Model performance evaluated using standard regression metrics  
+
+---
+
+## 🔌 REST API
+The application exposes a RESTful endpoint for predictions:
+
+- **Endpoint:** `/predict`  
+- **Method:** `POST`  
+- **Input:** JSON payload containing clinical features  
+- **Output:** Predicted birth weight (in grams)
+
+Basic request validation and error handling are implemented to ensure reliable API responses.
 
 ---
 
 ## ⚙️ Features
-- Clean and simple UI for data input
-- Real-time birth weight prediction
-- End-to-end ML pipeline (training → deployment)
-- Fully deployed and accessible online
+- Clean and simple UI for clinical data input  
+- Real-time birth weight prediction  
+- End-to-end ML pipeline (training → inference → deployment)  
+- Fully deployed and publicly accessible web application  
+
+---
+
+## 🧪 Testing
+- Manual API testing performed using Postman  
+- Input validation tested for missing and invalid values  
+- Output sanity checks conducted during development  
 
 ---
 
 ## 📁 Project Structure
-- birth-weight-predictor/
-- ├── app.py              
-- ├── model.pkl           
-- ├── requirements.txt   
-- ├── templates/          
-- └── README.md           
-
----
-
-## 🧪 How to Run Locally
-```bash
-git clone https://github.com/akashsmb10/birth-weight-predictor.git
-cd birth-weight-predictor
-pip install -r requirements.txt
-python app.py
-
