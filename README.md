@@ -24,18 +24,21 @@ The main goals of this project are:
 ```
 Machine Model/
 │
+├── birth-weight-predictor/
+│   ├── app.py
+│   ├── model.pkl
+│   ├── requirements.txt
+│   └── .gitignore
+│
 ├── templates/
-│ └── index.html
+│   └── index.html
 │
 ├── dataset/
-│ └── birth_weight.csv
+│   └── birth_weight.csv
 │
-├── app.py
-├── model.pkl
 ├── ML_training.ipynb
 ├── model_training.ipynb
-├── requirements.txt
-├── .gitignore
+└── myvenv/
 
 ```
 
