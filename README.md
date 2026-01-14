@@ -1,190 +1,90 @@
-🧠 Birth Weight Prediction System using Machine Learning & Flask REST APIs
+# 🧠 Birth Weight Prediction – ML-Driven Clinical Prediction System
 
-This project is an end-to-end Machine Learning web application that predicts newborn birth weight using maternal and pregnancy-related clinical features.
-It demonstrates how a trained ML model can be deployed using Flask REST APIs and accessed via both HTTP requests and a simple web interface.
+This project implements a **Machine Learning–based regression model** using Python to predict **newborn birth weight** based on maternal and pregnancy-related clinical features.  
+The trained model is deployed using **Flask REST APIs** and can be accessed via both **HTTP requests and a simple web interface**.
 
-🚀 Key Features
+---
 
-Machine Learning–based regression model for birth weight prediction
+## 📌 Project Objectives
 
-Flask REST API for real-time predictions
+The main goals of this project are:
 
-HTML form-based frontend for user input
+- Understand clinical data-based regression problems
+- Perform data preprocessing and feature selection
+- Train a regression model using Scikit-learn
+- Evaluate model performance using standard metrics
+- Serialize and load models using Pickle
+- Build RESTful APIs using Flask
+- Deploy ML models as real-world web services
 
-Input validation and error handling
+---
 
-Trained model loaded using Pickle
+## 📂 Project Structure
 
-Deployment-ready structure (Render compatible)
-
-📌 Problem Statement
-
-Birth weight is a critical indicator of neonatal health.
-This application estimates birth weight using clinical and demographic maternal factors, enabling data-driven healthcare insights and demonstrating practical ML deployment using RESTful APIs.
-
-🧱 Project Structure
 '''
 Machine Model/
+│
 ├── templates/
 │ └── index.html
+│
 ├── dataset/
 │ └── birth_weight.csv
-├── myvenv/
+│
 ├── app.py
 ├── model.pkl
 ├── ML_training.ipynb
 ├── model_training.ipynb
 ├── requirements.txt
 ├── .gitignore
-└── README.md
 '''
 
-📊 Dataset Description
+---
 
-The dataset consists of structured pregnancy and maternal health records.
+## 📊 Dataset
 
-Input Features
+The dataset consists of structured maternal and pregnancy health records.
 
-Gestation (days)
+### Features
 
-Parity
+- Gestation (days)
+- Parity
+- Mother Age
+- Mother Height
+- Mother Weight
+- Smoking Status (0 = No, 1 = Yes)
 
-Mother’s Age
+### Target Variable
 
-Mother’s Height
+- **Birth Weight (grams)**
 
-Mother’s Weight
+---
 
-Smoking Status (0 = No, 1 = Yes)
+## 🤖 Machine Learning Model
 
-Target Variable
+- Model Type: Supervised Regression
+- Library: Scikit-learn
+- Preprocessing applied before training
+- Model saved using `pickle` as `model.pkl`
 
-Birth Weight (grams)
+---
 
-🤖 Machine Learning Pipeline
+## 🛠️ Technologies Used
 
-Data cleaning and preprocessing
+- Python
+- NumPy
+- Pandas
+- Scikit-learn
+- Flask
+- HTML / CSS
+- Jupyter Notebook
+- Postman (for API testing)
 
-Feature selection and formatting
+---
 
-Regression model training using Scikit-learn
+## ⚙️ Installation & Setup
 
-Model evaluation using regression metrics
+### 1️⃣ Clone the repository
 
-Final model serialized using pickle as model.pkl
-
-📈 Evaluation Metrics
-
-R² Score
-
-Mean Squared Error (MSE)
-
-Root Mean Squared Error (RMSE)
-
-🔌 REST API Usage
-Endpoint
-
-POST /predict
-
-Sample Request (JSON)
-
-{
-"gestation": 280,
-"parity": 1,
-"age": 26,
-"height": 160,
-"weight": 60,
-"smoking": 0
-}
-
-Sample Response
-
-{
-"predicted_birth_weight": 3120.45
-}
-
-🛠️ Technologies Used
-
-Python
-
-Flask
-
-Scikit-learn
-
-Pandas
-
-NumPy
-
-HTML / CSS
-
-Jupyter Notebook
-
-Postman
-
-Git & GitHub
-
-⚙️ Local Setup Instructions
-Clone Repository
-
+```bash
 git clone https://github.com/akashsmb10/birth-weight-ml-api.git
-
 cd birth-weight-ml-api
-
-Create Virtual Environment
-
-python -m venv myvenv
-myvenv\Scripts\activate (Windows)
-source myvenv/bin/activate (Linux/Mac)
-
-Install Dependencies
-
-pip install -r requirements.txt
-
-Run Application
-
-python app.py
-
-Open in browser:
-http://127.0.0.1:5000
-
-🧪 Testing
-
-API tested using Postman
-
-UI tested through browser forms
-
-Error handling tested for invalid inputs
-
-Prediction sanity checks performed
-
-🚀 Deployment
-
-The project is ready for deployment on cloud platforms such as:
-
-Render
-
-Railway
-
-Heroku (with configuration changes)
-
-Render Start Command
-
-gunicorn app:app
-
-🔮 Future Enhancements
-
-Add feature scaling pipelines
-
-Improve UI with Bootstrap
-
-Add logging and monitoring
-
-Add Docker support
-
-Add Swagger API documentation
-
-👤 Author
-
-Akash Bailwad
-Data Analytics | Machine Learning | Backend Development
-GitHub: https://github.com/akashsmb10
