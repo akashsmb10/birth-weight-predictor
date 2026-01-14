@@ -21,7 +21,8 @@ The main goals of this project are:
 
 ## 📂 Project Structure
 
-'''Machine Model/
+'''
+Machine Model/
 │
 ├── templates/
 │ └── index.html
@@ -34,7 +35,9 @@ The main goals of this project are:
 ├── ML_training.ipynb
 ├── model_training.ipynb
 ├── requirements.txt
-├── .gitignore'''
+├── .gitignore
+
+'''
 
 ---
 
