@@ -97,10 +97,9 @@ The dataset consists of structured maternal and pregnancy health records.
 ```bash
 git clone https://github.com/akashsmb10/birth-weight-ml-api.git
 cd birth-weight-ml-api
-
-## Testing
-Manual Testing: Use the web interface
-
-API Testing: Use Postman or cURL commands
-
+```
+---
+## 🧪 Testing
+   1) Manual Testing: Use the web interface
+   2) API Testing: Use Postman or cURL commands
 
