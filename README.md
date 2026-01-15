@@ -89,6 +89,17 @@ The dataset consists of structured maternal and pregnancy health records.
 - Postman (for API testing)
 
 ---
+## 🔄 Development Workflow
+Data Analysis: ML_training.ipynb
+
+Model Training: model_training.ipynb
+
+Application Development: app.py
+
+Testing: Local server + Postman
+
+Deployment: Render platform
+---
 
 ## ⚙️ Installation & Setup
 
@@ -98,8 +109,6 @@ The dataset consists of structured maternal and pregnancy health records.
 git clone https://github.com/akashsmb10/birth-weight-ml-api.git
 cd birth-weight-ml-api
 ```
----
-## 🧪 Testing
-   1) Manual Testing: Use the web interface
-   2) API Testing: Use Postman or cURL commands
+
+
 
